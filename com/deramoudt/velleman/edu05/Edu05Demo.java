@@ -21,7 +21,10 @@ public class Edu05Demo {
         super();
     }
 
-   
+   /**
+     *
+     * @param args no args are expected
+     */
     public static void main(String[] args) {
         
         Edu05Library.INSTANCE.OpenDevice() ;
