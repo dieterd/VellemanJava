@@ -10,7 +10,7 @@ To have this API to work:
 1. Download and install JNA from https://github.com/twall/jna
 2. Create a jar from the EDUxx.DLL using the proper platform directory
 
-    (go to directory where the EDUxx.DLL is located) , example for Win32-64 bit
+..* go to directory where the EDUxx.DLL is located , example for Win32-64 bit
 ```
     mkdir win32-x86-64
     
