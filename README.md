@@ -7,15 +7,15 @@ To have this API to work:
 
  1. Download and install JNA from https://github.com/twall/jna
  2. Create a jar from the EDUxx.DLL using the proper platform directory, go to directory where the EDUxx.DLL is located , example for Win32-64 bit
-
+  
 ```
     mkdir win32-x86-64
-    
+      
     copy EDU*.DLL win32-x86-64
-    
+      
     jar cvf EDU.jar win32-x86-64 
 ```
-
+  
  3. your classpath should be : jna.jar , jna-platform.jar and EDU.jar 
  4. connect the EDU board and run the EDUxxDemo. eg.
 
