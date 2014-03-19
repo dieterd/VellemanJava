@@ -44,12 +44,13 @@ public class Edu05Demo {
         // knightrider 
         int ch = 0 ;
         int pr = - 1 ;
+        int maxLeds = 8 ;
         Edu05Library.INSTANCE.ClearAllDigital();
         while (true) {
             ch = ch + 1  ;
             pr = pr + 1 ;
-            if (ch == 9) {  ch = 1; } ;
-            if (pr == 9) {  pr = 1 ; } ;
+            if (ch > maxLeds ) {  ch = 1; } ;
+            if (pr > maxLeds) {  pr = 1 ; } ;
             Edu05Library.INSTANCE.SetDigitalChannel(ch) ;
             Edu05Library.INSTANCE.ClearDigitalChannel(pr) ;
             try {
