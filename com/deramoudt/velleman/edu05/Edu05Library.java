@@ -47,58 +47,72 @@ public interface Edu05Library extends Library {
      */
     void InOutMode(int IOMode);
 
-    //Analog to Digital converter function
-
     /**
+     * Analog to Digital converter function
      * @param Channel 1-5
      * @return
      */
     int ReadAnalogChannel(int Channel);
 
-    //PWM Output function
-
     /**
+     * Sets the status the PWM output.
      * @param Channel
      * @param Data
      */
-    void SetPWM(int Channel, int Data); //Sets the status the PWM output
-
-    //Digital Output functions
+    void SetPWM(int Channel, int Data); 
 
     /**
+     * Digital Output functions.
+     *
+     * Sets the digital outputs according to the data.
      * @param Data
      */
-    void OutputAllDigital(int Data); //Sets the digital outputs according to the data
+    void OutputAllDigital(int Data); 
+
+    /**
+     * Clears the output channel
+     * @param Channel 1 to 8
+     */
+    void ClearDigitalChannel(int Channel); 
+    
+    /**
+     * Clears all output channels
+     */
+    void ClearAllDigital();
 
     /**
      * @param Channel 1 to 8
      */
-    void ClearDigitalChannel(int Channel); //Clears the output channel
-
-    void ClearAllDigital(); //Clears all output channels
+    void SetDigitalChannel(int Channel); 
 
     /**
-     * @param Channel 1 to 8
+     * Sets all output channels.
      */
-    void SetDigitalChannel(int Channel); //Sets the output channel
 
-    void SetAllDigital(); //Sets all output channels
-
-    //Digital Input functions
+    void SetAllDigital(); 
 
     /**
+     * Digital Input functions
+     * 
+     * Reads the status of all the input channels
      * @return
      */
-    int ReadAllDigital(); // Reads the status of all the input channels
+    int ReadAllDigital();
 
-    //LCD functions
-    void LCDInit(); //Initializes the LCD display module
-
-    void LCDClear(); //Clears the text on the LCD display
+    /**
+     * LCD Functions
+     * Initializes the LCD display module
+     */
+    void LCDInit(); 
+    
+    /**
+     * Clears the text on the LCD display
+     */
+    void LCDClear(); 
 
     /**
      * @param Data String to be displayed on the LCD 
      * @param Position where to set first character, starting from the left.
      */
-    void LCDWriteString(String Data, int Position); //
+    void LCDWriteString(String Data, int Position);
 }
