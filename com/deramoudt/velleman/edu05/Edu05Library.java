@@ -20,6 +20,7 @@ package com.deramoudt.velleman.edu05;
 import com.sun.jna.Library;
 import com.sun.jna.Native;
 
+
 public interface Edu05Library extends Library {
         
         Edu05Library INSTANCE = (Edu05Library)
