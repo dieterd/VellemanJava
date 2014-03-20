@@ -17,9 +17,15 @@ Step 2. Create a jar from the EDUxx.DLL using the proper platform directory, go 
     jar cvf EDU.jar win32-x86-64 
 ```
   
-Step 3. your classpath should be : jna.jar , jna-platform.jar and EDU.jar 
+Step 3. your classpath should be : jna.jar , jna-platform.jar and EDU.jar and current directory
 
-Step 4. connect the EDU board and run the EDUxxDemo. eg.
+Step 4. Compile the class for the demo and the library   
+
+```
+    javac -classpath .;jna.jar;jna-platform.jar;EDU.jar com\deramoudt\velleman\Edu05\*.java
+```
+
+Step 5. connect the EDU board and run the EDUxxDemo. eg.
 
 ```
     java -classpath .;jna.jar;jna-platform.jar;EDU.jar com.deramoudt.velleman.edu05.Edu05Demo
