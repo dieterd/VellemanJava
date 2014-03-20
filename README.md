@@ -22,7 +22,7 @@ Step 3. your classpath should be : jna.jar , jna-platform.jar and EDU.jar
 Step 4. connect the EDU board and run the EDUxxDemo. eg.
 
 ```
-    java -classpath jna.jar;jna-platform.jar;EDU.jar com.deramoudt.velleman.edu05.Edu05Demo
+    java -classpath .;jna.jar;jna-platform.jar;EDU.jar com.deramoudt.velleman.edu05.Edu05Demo
 ```
 Warning : as the EDUxx.DLL is 32-bit, you should only use a 32 bit Java VM to run this, even on 64 bit Windows.
 
